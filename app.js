@@ -4,12 +4,12 @@ const menuItems = document.querySelectorAll(".menuItem");
 const products = [
   {
     id: 1,
-    title: "Air Force",
-    price: 119,
+    title: "Cookie Extreme",
+    price: 5,
     colors: [
       {
         code: "black",
-        img: "./img/Product/air.png",
+        img: "./img/Product/extreme.png",
       },
       {
         code: "darkblue",
@@ -19,12 +19,12 @@ const products = [
   },
   {
     id: 2,
-    title: "Air Jordan",
-    price: 149,
+    title: "Purrfect Cookie",
+    price: 6,
     colors: [
       {
         code: "lightgray",
-        img: "./img/Product/jordan.png",
+        img: "./img/Product/purfect.png",
       },
       {
         code: "green",
@@ -34,12 +34,12 @@ const products = [
   },
   {
     id: 3,
-    title: "Blazer",
-    price: 109,
+    title: "Panda Best Cookie",
+    price: 6,
     colors: [
       {
         code: "lightgray",
-        img: "./img/Product/blazer.png",
+        img: "./img/Product/panda.png",
       },
       {
         code: "green",
@@ -49,12 +49,12 @@ const products = [
   },
   {
     id: 4,
-    title: "Crater",
-    price: 129,
+    title: "Chocolate Delight",
+    price: 5,
     colors: [
       {
         code: "black",
-        img: "./img/Product/crater.png",
+        img: "./img/Product/delight.png",
       },
       {
         code: "lightgray",
@@ -64,12 +64,12 @@ const products = [
   },
   {
     id: 5,
-    title: "Hippie",
-    price: 99,
+    title: "Sugary Love Cookie",
+    price: 7,
     colors: [
       {
         code: "gray",
-        img: "./img/Product/hippie.png",
+        img: "./img/Product/love.png",
       },
       {
         code: "black",

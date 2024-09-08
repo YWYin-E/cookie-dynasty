@@ -6,6 +6,7 @@ body {
   font-family: "Lato", sans-serif;
   padding: 0;
   margin: 0;
+  background-color: #C4A484;
 }
 
 nav {
@@ -165,6 +166,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 50px;
+  background-color: #C4A484;
 }
 
 .feature {
@@ -186,14 +188,14 @@ nav {
 }
 
 .featureDesc {
-  color: gray;
+  color: darkcyan;
   width: 50%;
   height: 100px;
 }
 
 .product {
   height: 100vh;
-  background-color: whitesmoke;
+  background-color: #5C4033;
   position: relative;
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
 }
@@ -365,7 +367,7 @@ label {
 
 .nsItem {
   flex: 1;
-  background-color: black;
+  background-color: #5C4033;
   color: white;
   display: flex;
   flex-direction: column;
@@ -411,7 +413,7 @@ footer {
 
 .fListItem {
   margin-bottom: 10px;
-  color: gray;
+  color: darkcyan;
   cursor: pointer;
 }
 
