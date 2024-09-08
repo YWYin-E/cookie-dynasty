@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "cookie dynasty",
+			"path": "."
+		}
+	],
+	"settings": {
+		"java.debug.settings.onBuildFailureProceed": true
+	}
+}
