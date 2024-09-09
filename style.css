@@ -40,7 +40,7 @@ nav {
 
 .limitedOffer {
   font-size: 20px;
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid rgb(149, 205, 146);
   cursor: pointer;
 }
 
@@ -130,19 +130,19 @@ nav {
 }
 
 .sliderItem:nth-child(1) .sliderBg {
-  background-color: #369e62;
+  background-color: #ff8589;
 }
 .sliderItem:nth-child(2) .sliderBg {
-  background-color: rebeccapurple;
+  background-color: rgb(230, 208, 252);
 }
 .sliderItem:nth-child(3) .sliderBg {
-  background-color: teal;
+  background-color: rgb(166, 82, 251);
 }
 .sliderItem:nth-child(4) .sliderBg {
-  background-color: cornflowerblue;
+  background-color: rgb(191, 210, 245);
 }
 .sliderItem:nth-child(5) .sliderBg {
-  background-color: rgb(124, 115, 80);
+  background-color: rgb(238, 230, 200);
 }
 
 .sliderItem:nth-child(1) .sliderPrice {
@@ -303,7 +303,7 @@ label {
 
 .productDesc {
   font-style: 24px;
-  color: gray;
+  color: rgb(255, 255, 255);
 }
 
 .colors,
@@ -316,13 +316,13 @@ label {
   width: 32px;
   height: 32px;
   border-radius: 5px;
-  background-color: black;
+  background-color: #988558;
   margin-right: 10px;
   cursor: pointer;
 }
 
 .color:last-child {
-  background-color: darkblue;
+  background-color: #C4A484;
 }
 
 .piece {
