@@ -4,7 +4,8 @@ a{
     right: 20px;
 }
 body{
-    background-color: rgb(213, 205, 205);
+    background-image: url('./img/admin_background.png');
+    background-color: rgb(125, 83, 0);
 }
 table {
     width: 100%;
@@ -16,13 +17,31 @@ th {
     border: 1px solid #070707;
     padding: 12px;
     background-color: #000000c7;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 td {
     border:0.5px solid #111111;
 }
 h2 {
-    font-size: 28px;
-    color: #333;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
     text-align: center;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #070707;
 }
+tr {
+    background-color: #fffda3;
+}
+.back {
+    background-color: #b40000;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  } 

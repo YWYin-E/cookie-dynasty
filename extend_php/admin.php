@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Management</title>
-    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="../admin.css">
 </head>
 <body>
     <h2>Payments Management</h2>
-    <a href="../index.html">Back</a>
+    <a href="../extend_html/admin.html"><button class="back" onclick="document.location='../extend_html/admin.html'">Back</button></a>
     <table>
         <tr>
             <th>No.</th>
