@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+            background-image: url('../img/admin_background.png');
+            background-color: #C4A484;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .modal-content {
+            background-color: #aaaaaa;
+            padding: 20px;
+            border: 1px solid rgb(104, 96, 0);
+            width: 300px;
+            box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        a {
+            color: #366b38;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function login(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get the username and password values
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Create an AJAX request
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', '../extend_php/login.php', true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    const response = JSON.parse(xhr.responseText);
+                    if (response.status === 'success') {
+                        // Redirect to index.html on successful login
+                        window.location.href = '../index.html';
+                    } else {
+                        // Show error message
+                        alert(response.message);
+                    }
+                }
+            };
+
+            // Send the request with the username and password
+            xhr.send(`username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`);
+        }
+    </script>
+</head>
+<body>
+    <div class="modal-content">
+        <h2>Login</h2>
+        <form onsubmit="login(event)">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+            <button type="submit">Login</button>
+        </form>
+        <p>Forgot password? <a href="request_reset.html">Reset Password</a></p>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+</body>
+</html>
