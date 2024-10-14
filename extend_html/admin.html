@@ -5,6 +5,28 @@
 <style>
 
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(../img/admin_background.png);
+  background-color: #f9f9f9;
+  color: #333333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 3%;
+  border-radius: 8px;
+  box-shadow: 20px 20px 70px rgba(0, 0, 0, 0.767);
+}
 
 .back {
   background-color: #4e3703;
@@ -17,13 +39,14 @@
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  border-radius: 8px; /* Adjust the value for more or less roundness */
 }
 
 .button {
   background-color: #04AA6D;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 15px 22px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -34,6 +57,7 @@
 </style>
 </head>
 <body>
+  <div class="container">
 <p>  <button class="back" onclick="document.location='../index.html'">Back</button>
 </p>
   <!--button class="button" onclick="document.location='../extend_php/orders_management.php'">Orders Management</button-->
@@ -43,6 +67,6 @@
   <button class="button" onclick="document.location='../extend_php/contact_management.php'">Contact Management</button>
   <button class="button" onclick="document.location='../extend_php/feedback_management.php'">Feedback Management</button>
 
-
+</div>
 </body>
 </html>

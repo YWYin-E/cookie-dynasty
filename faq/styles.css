@@ -1,0 +1,169 @@
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(../img/admin_background.png);
+  background-color: #f9f9f9;
+  color: #333333;
+  padding: 20px;
+}
+
+.back {
+  background-color: #4e3703;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px; /* Adjust the value for more or less roundness */
+}
+
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 20px 20px 70px rgba(0, 0, 0, 0.767);
+}
+
+h1 {
+  text-align: center;
+  color: #4CAF50;
+  margin-bottom: 40px;
+  margin-top: -48px;
+}
+
+/* Search Bar */
+.search-bar {
+  margin-bottom: 30px;
+}
+
+#faq-search {
+  width: 100%;
+  padding: 10.5px;
+  border-radius: 8px;
+  border: 1px solid #969696;
+}
+
+/* FAQ Sections */
+.faq-section {
+  margin-bottom: 20px;
+}
+
+.faq-section-header {
+  background-color: #4CAF50;
+  color: #ffffff;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.faq-section-header:hover {
+  background-color: #45a049;
+}
+
+.faq-section-header::after {
+  content: '\f067'; /* Font Awesome Plus icon */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.faq-section-header.active::after {
+  content: '\f068'; /* Font Awesome Minus icon */
+}
+
+.faq-items {
+  display: none; /* Hidden by default */
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  padding-left: 20px;
+  border-left: 4px solid #4CAF50;
+  background-color: #f1f1f1;
+  border-radius: 0 5px 5px 0;
+  margin-top: 10px;
+}
+
+/* FAQ Items */
+.faq-item {
+  margin-bottom: 15px;
+}
+
+/* FAQ Questions */
+.faq-question {
+  background-color: #ffffff;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 20px;
+  margin-right: 20px;
+  transition: background-color 0.3s, max-height 0.5s ease-out;
+}
+
+.faq-question:hover {
+  background-color: #f0f0f0;
+}
+
+.faq-question::after {
+  content: '\f067'; /* Font Awesome Plus icon */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 18px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.faq-question.active::after {
+  content: '\f068'; /* Font Awesome Minus icon */
+}
+
+/* FAQ Answers */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out; /* Transition for smooth animation */
+  padding-left: 20px;
+  border-left: 3px solid #4CAF50;
+  background-color: #fafafa;
+  border-radius:  0 5px 5px 0;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+/* Show the answer when the question is active */
+.faq-question.active + .faq-answer {
+  max-height: 200px; /* Change to a high enough value to fit most content */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .faq-section-header, .faq-question {
+      font-size: 16px;
+      padding: 12px 15px;
+  }
+  .faq-section-header::after, .faq-question::after {
+      font-size: 18px;
+      right: 15px;
+  }
+}
