@@ -49,6 +49,7 @@
 ## Troubleshooting
 - Ensure that **Apache** and **MySQL** are running in the XAMPP Control Panel.
 - If `http://localhost/cookiedynasty` doesn't load, check that the `CookieDynasty` folder is correctly placed in `C:\xampp\htdocs` (for manual installation).
+- If cannot download from github, try download from [google drive](https://drive.google.com/drive/folders/1uHCzVR59-TY9B0Me2tHewl23DADtqjnz?usp=sharing) https://drive.google.com/drive/folders/1uHCzVR59-TY9B0Me2tHewl23DADtqjnz?usp=sharing
 
 ## License
 [MIT License](LICENSE)
